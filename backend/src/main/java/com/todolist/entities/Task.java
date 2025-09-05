@@ -19,15 +19,18 @@ public class Task {
     public Task() {
     }
 
-    public Task(Long id, String label, String description, boolean completed) {
-        this.id = id;
+    public Task(String label, String description, boolean completed) {
         this.label = label;
         this.description = description;
         this.completed = completed;
     }
 
+    public Task(String label, String description) {
+        this(label, description, false);
+    }
+
     public Long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(Long id) {
@@ -35,7 +38,7 @@ public class Task {
     }
 
     public String getLabel() {
-        return label;
+        return this.label;
     }
 
     public void setLabel(String label) {
@@ -43,7 +46,7 @@ public class Task {
     }
 
     public String getDescription() {
-        return description;
+        return this.description;
     }
 
     public void setDescription(String description) {
@@ -51,7 +54,7 @@ public class Task {
     }
 
     public boolean isCompleted() {
-        return completed;
+        return this.completed;
     }
 
     public void setCompleted(boolean completed) {

@@ -1,4 +1,4 @@
-package com.todolist.dao;
+package com.todolist.repository;
 
 import com.todolist.entities.Task;
 import org.springframework.data.jpa.repository.JpaRepository;

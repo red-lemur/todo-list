@@ -1,11 +1,11 @@
-package com.todolist.application;
+package com.todolist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackendApplicationTests {
+class BackendApplicationTest {
     @Test
-    void contextLoads() {
+    public void contextLoads() {
     }
 }

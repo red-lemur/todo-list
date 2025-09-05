@@ -68,7 +68,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"label\": \"Première tâche\",\n    \"description\": \"Ceci est la première tâche\",\n    \"completed\": true\n}",
+					"raw": "{\n    \"label\": \"Tâche créée via Postman\",\n    \"description\": \"Cette tâche a été créée via Postman !\",\n    \"completed\": false\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -91,7 +91,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"label\": \"Deuxième tâche\",\r\n    \"description\": \"Ceci est la deuxième tâche\",\r\n    \"completed\": false\r\n}",
+					"raw": "{\r\n    \"label\": \"Tâche modifiée via Postman\",\r\n    \"description\": \"Cette tâche a été modifiée via Postman !\",\r\n    \"completed\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
