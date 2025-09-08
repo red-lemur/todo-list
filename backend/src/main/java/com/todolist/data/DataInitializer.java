@@ -1,6 +1,6 @@
 package com.todolist.data;
 
-import com.todolist.entities.Task;
+import com.todolist.entity.Task;
 import com.todolist.repository.TaskRepository;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;

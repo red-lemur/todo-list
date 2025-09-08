@@ -1,6 +1,7 @@
 package com.todolist.service;
 
-import com.todolist.entities.Task;
+import com.todolist.entity.Task;
+import com.todolist.exception.TaskNotFoundException;
 import com.todolist.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,8 +17,12 @@ public class TaskService {
         return this.taskRepository.findAll();
     }
 
-    public Task getTask(Long id) {
-        return this.taskRepository.findById(id).orElse(null);
+    public Task getTask(Long id) throws TaskNotFoundException {
+        Task task = this.taskRepository.findById(id).orElse(null);
+        if (task == null) {
+            throw new TaskNotFoundException();
+        }
+        return task;
     }
 
     public List<Task> getTasksByCompleted(boolean completed) {
@@ -25,6 +30,7 @@ public class TaskService {
     }
 
     public Task createTask(Task task) {
+        task.setId(null); // Réinitialisation de l'ID : on ne peut pas le forcer
         return this.taskRepository.save(task);
     }
 
