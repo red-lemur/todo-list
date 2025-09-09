@@ -1,1 +1,17 @@
-<p>tasks-dashboard works!</p>
+@if (taskService.tasks()) { @for (task of taskService.tasks(); track task.id) {
+<app-card class="mb-3" [title]="task.label" [content]="task.description">
+  <app-button
+    [id]="'edit-task-' + task.id"
+    [label]="EDIT_BUTTON_LABEL"
+    (actionPerformed)="editTask(task.id)"
+  ></app-button>
+  <app-button
+    [id]="'delete-task-' + task.id"
+    [label]="DELETE_BUTTON_LABEL"
+    (actionPerformed)="deleteTask(task.id)"
+  ></app-button>
+</app-card>
+} }
+
+<app-icon [id]="'edit'" [title]="'edit'" [iconName]="'edit'"></app-icon>
+<app-icon [id]="'delete'" [title]="'delete'" [iconName]="'delete'"></app-icon>
