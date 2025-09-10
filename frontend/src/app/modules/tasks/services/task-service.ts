@@ -22,16 +22,16 @@ export class TaskService {
   }
   public allTasks: Signal<Task[] | undefined> = toSignal(this.allTasksSubject);
 
-  public completedTasksSubject: BehaviorSubject<Task[]> = new BehaviorSubject<Task[]>([]);
-  public getCompletedTasks() {
-    this.httpClient.get<Task[]>(`${environment.apiUrl}/completed?completed=true`).subscribe({
+  public nonCompletedTasksSubject: BehaviorSubject<Task[]> = new BehaviorSubject<Task[]>([]);
+  public getNonCompletedTasks() {
+    this.httpClient.get<Task[]>(`${environment.apiUrl}/completed?completed=false`).subscribe({
       next: (tasks: Task[]) => {
-        this.completedTasksSubject.next(tasks);
+        this.nonCompletedTasksSubject.next(tasks);
       },
       error: () => {},
     });
   }
-  public completedTasks: Signal<Task[] | undefined> = toSignal(this.completedTasksSubject);
+  public nonCompletedTasks: Signal<Task[] | undefined> = toSignal(this.nonCompletedTasksSubject);
 
   public getTask(taskId: number): Observable<Task> {
     return this.httpClient.get<Task>(`${environment.apiUrl}/${taskId}`);

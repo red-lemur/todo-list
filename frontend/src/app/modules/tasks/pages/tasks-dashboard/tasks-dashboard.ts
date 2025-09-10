@@ -37,7 +37,7 @@ export class TasksDashboard {
   public CREATE_BUTTON_ID: string = 'create-task';
   public UPDATE_BUTTON_ID_PREFIX: string = 'update-task-';
   public DELETE_BUTTON_ID_PREFIX: string = 'delete-task-';
-  public FILTER_BUTTON_LABEL_NO_FILTER: string = $localize`Show only completed tasks`;
+  public FILTER_BUTTON_LABEL_NO_FILTER: string = $localize`Show only non completed tasks`;
   public FILTER_BUTTON_LABEL_FILTERED: string = $localize`Show all tasks`;
   public filterButtonLabel: WritableSignal<string> = signal(this.FILTER_BUTTON_LABEL_NO_FILTER);
   public CREATE_BUTTON_LABEL: string = $localize`Create a task`;
@@ -55,7 +55,7 @@ export class TasksDashboard {
   constructor() {
     effect(() => {
       if (this.tasksAreFiltered()) {
-        this.currentlyShowedTasks = this.taskService.completedTasks;
+        this.currentlyShowedTasks = this.taskService.nonCompletedTasks;
         this.filterButtonLabel.set(this.FILTER_BUTTON_LABEL_FILTERED);
         this.filterButtonIcon.set(this.FILTER_BUTTON_ICON_FILTERED);
       } else {
@@ -151,6 +151,8 @@ export class TasksDashboard {
   }
 
   private reloadTasks(): void {
-    this.tasksAreFiltered() ? this.taskService.getCompletedTasks() : this.taskService.getAllTasks();
+    this.tasksAreFiltered()
+      ? this.taskService.getNonCompletedTasks()
+      : this.taskService.getAllTasks();
   }
 }
