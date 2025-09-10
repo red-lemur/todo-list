@@ -15,13 +15,13 @@ import {
   styleUrl: './confirm.scss',
 })
 export class Confirm {
-  public title!: string;
-  public question!: string;
-
   public CANCEL_BUTTON_ID: string = 'cancel-dialog';
   public OK_BUTTON_ID: string = 'ok-dialog';
   public CANCEL_BUTTON_LABEL: string = $localize`Cancel`;
   public OK_BUTTON_LABEL: string = $localize`Ok`;
+
+  public title!: string;
+  public question!: string;
 
   constructor(@Inject(MAT_DIALOG_DATA) data: any) {
     this.title = data.title;
