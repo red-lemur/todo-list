@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5283298922760776092" datatype="html">
+        <source>Tasks dashboard</source>
+        <target>Tableau de bord des tâches à faire</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2275328567992347600" datatype="html">
+        <source>Page not found</source>
+        <target>Page non trouvée</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/pages/page-not-found/page-not-found.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2159130950882492111" datatype="html">
+        <source>Cancel</source>
+        <target>Annuler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/components/create-or-update-task-dialog/create-or-update-task-dialog.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm/confirm.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3768927257183755959" datatype="html">
+        <source>Save</source>
+        <target>Enregistrer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/components/create-or-update-task-dialog/create-or-update-task-dialog.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2641763913244652289" datatype="html">
+        <source>Task label</source>
+        <target>Intitulé de la tâche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/components/create-or-update-task-dialog/create-or-update-task-dialog.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5357468261595610025" datatype="html">
+        <source>Task description</source>
+        <target>Description de la tâche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/components/create-or-update-task-dialog/create-or-update-task-dialog.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2003803336048625991" datatype="html">
+        <source>Task is completed</source>
+        <target>La tâche a été effectuée</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/components/create-or-update-task-dialog/create-or-update-task-dialog.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1239498143607119156" datatype="html">
+        <source>You must enter a task label</source>
+        <target>Vous devez entrer l'intitulé de la tâche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/components/create-or-update-task-dialog/create-or-update-task-dialog.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="57299731753887603" datatype="html">
+        <source>Task completed</source>
+        <target>Tâche effectuée</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3329913498418191586" datatype="html">
+        <source>Show only non completed tasks</source>
+        <target>Afficher les tâches à effectuer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3538238390769084292" datatype="html">
+        <source>Show all tasks</source>
+        <target>Afficher toutes les tâches</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8117726667015044486" datatype="html">
+        <source>Create a task</source>
+        <target>Créer une tâche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5233717248810666120" datatype="html">
+        <source>Update task</source>
+        <target>Modifier cette tâche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4510676848705799339" datatype="html">
+        <source>Delete task</source>
+        <target>Supprimer cette tâche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7157121298316699755" datatype="html">
+        <source>Update a task</source>
+        <target>Modifier une tâche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2110669411248042119" datatype="html">
+        <source>Delete a task</source>
+        <target>Supprimer une tâche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="957015927490089129" datatype="html">
+        <source>Do you really want to delete this task?</source>
+        <target>Voulez-vous vraiment supprimer cette tâche ?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/tasks/pages/tasks-dashboard/tasks-dashboard.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8720977247725652816" datatype="html">
+        <source>Ok</source>
+        <target>Ok</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/confirm/confirm.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5126448851835803532" datatype="html">
+        <source>To-do list</source>
+        <target>Tâches à faire</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navbar/navbar.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

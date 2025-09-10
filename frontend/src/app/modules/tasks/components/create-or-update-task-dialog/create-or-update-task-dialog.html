@@ -1,0 +1,41 @@
+<h2 mat-dialog-title>{{ dialogTitle }}</h2>
+<mat-dialog-content>
+  <div class="d-flex flex-column">
+    <mat-form-field>
+      <mat-label>{{ TASK_LABEL_INPUT_LABEL }}</mat-label>
+      <input
+        matInput
+        [formControl]="taskLabelControl"
+        (blur)="updateTaskLabelErrorMessage()"
+        required
+      />
+      @if (taskLabelControl.invalid) {
+      <mat-error>{{ taskLabelErrorMessage() }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>{{ TASK_DESCRIPTION_INPUT_LABEL }}</mat-label>
+      <textarea
+        matInput
+        [formControl]="taskDescriptionControl"
+        [rows]="TASK_DESCRIPTION_ROWS_NB"
+      ></textarea>
+    </mat-form-field>
+    <mat-checkbox [formControl]="taskCompletedControl">{{
+      TASK_COMPLETED_CHECKBOX_LABEL
+    }}</mat-checkbox>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button [id]="CANCEL_BUTTON_ID" matButton [mat-dialog-close]="undefined">
+    {{ CANCEL_BUTTON_LABEL }}
+  </button>
+  <button
+    [id]="SAVE_BUTTON_ID"
+    matButton
+    [mat-dialog-close]="getUpdatedTaskDetails()"
+    [disabled]="taskLabelControl.invalid"
+  >
+    {{ SAVE_BUTTON_LABEL }}
+  </button>
+</mat-dialog-actions>

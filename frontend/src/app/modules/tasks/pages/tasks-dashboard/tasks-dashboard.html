@@ -1,0 +1,42 @@
+@if (currentlyShowedTasks()) { @for (task of currentlyShowedTasks(); track task.id) {
+<div class="pb-3">
+  <app-card [title]="task.label" [content]="task.description">
+    @if (task.completed) {
+    <app-icon
+      class="card-title-icon ms-2"
+      [id]="COMPLETED_ICON_ID_PREFIX + task.id"
+      [title]="COMPLETED_ICON_TITLE"
+      iconName="check"
+    ></app-icon>
+    }
+    <ng-container class="card-actions">
+      <app-button
+        [id]="UPDATE_BUTTON_ID_PREFIX + task.id"
+        [label]="UPDATE_BUTTON_LABEL"
+        (actionPerformed)="onUpdateTaskClicked(task.id)"
+      ></app-button>
+      <app-button
+        [id]="DELETE_BUTTON_ID_PREFIX + task.id"
+        [label]="DELETE_BUTTON_LABEL"
+        (actionPerformed)="onDeleteTaskClicked(task.id)"
+      ></app-button>
+    </ng-container>
+  </app-card>
+</div>
+} }
+
+<app-floating-button
+  class="filter-tasks-button"
+  [id]="FILTER_BUTTON_ID"
+  [label]="filterButtonLabel()"
+  [iconName]="filterButtonIcon()"
+  (actionPerformed)="onFilterTasksClicked()"
+></app-floating-button>
+
+<app-floating-button
+  class="create-task-button"
+  [id]="CREATE_BUTTON_ID"
+  [label]="CREATE_BUTTON_LABEL"
+  iconName="add"
+  (actionPerformed)="onCreateTaskClicked()"
+></app-floating-button>

@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>{{ title }}</h2>
+<mat-dialog-content>{{ question }}</mat-dialog-content>
+<mat-dialog-actions>
+  <button [id]="CANCEL_BUTTON_ID" matButton [mat-dialog-close]="false">
+    {{ CANCEL_BUTTON_LABEL }}
+  </button>
+  <button [id]="OK_BUTTON_ID" matButton [mat-dialog-close]="true" cdkFocusInitial>
+    {{ OK_BUTTON_LABEL }}
+  </button>
+</mat-dialog-actions>
