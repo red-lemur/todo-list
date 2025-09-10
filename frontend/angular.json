@@ -105,28 +105,12 @@
           "builder": "@angular/build:extract-i18n"
         },
         "test": {
-          "builder": "@angular/build:karma",
+          "builder": "@angular/build:unit-test",
           "options": {
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": ["src/styles.scss", "node_modules/font-awesome/scss/font-awesome.scss"],
-            "polyfills": ["@angular/localize/init"],
-            "stylePreprocessorOptions": {
-              "sass": {
-                "silenceDeprecations": [
-                  "mixed-decls",
-                  "color-functions",
-                  "global-builtin",
-                  "import"
-                ]
-              }
-            }
+            "buildTarget": "::development",
+            "runner": "vitest",
+            "providersFile": "src/app/setup.ts"
           }
         }
       }

@@ -36,6 +36,10 @@ If needed, in a command prompt, run:
 
     npm install -g @angular/cli
 
+In a command prompt, navigate to the todo-list/frontend folder, then run:
+
+    npm install
+
 #### Execution
 
 In a command prompt, navigate to the todo-list/frontend folder.
