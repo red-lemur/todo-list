@@ -116,7 +116,17 @@
               }
             ],
             "styles": ["src/styles.scss", "node_modules/font-awesome/scss/font-awesome.scss"],
-            "polyfills": ["@angular/localize/init"]
+            "polyfills": ["@angular/localize/init"],
+            "stylePreprocessorOptions": {
+              "sass": {
+                "silenceDeprecations": [
+                  "mixed-decls",
+                  "color-functions",
+                  "global-builtin",
+                  "import"
+                ]
+              }
+            }
           }
         }
       }
